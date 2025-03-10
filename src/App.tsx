@@ -15,21 +15,21 @@ function App() {
       name: "Organic Gulal Pack",
       description: "",
       price: 100,
-      image: "./src/assets/gulal.jpg"
+      image: "./assets/gulal.jpg"
     },
     {
       id: 2,
       name: "Premium Pichkari Set",
       description: "",
       price: 100,
-      image:"./src/assets/6215988.jpeg"   
+      image:"./assets/6215988.jpeg"   
      },
     {
       id: 3,
       name: "Festive Kurta Set",
       description: "",
       price: 100,
-      image: "./src/assets/tshirtimage.jpeg"
+      image: "./assets/tshirtimage.jpeg"
     },
   ];
 
