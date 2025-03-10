@@ -1,0 +1,94 @@
+import React, { useState } from 'react';
+import { ShoppingCart, Menu, X } from 'lucide-react';
+import { CartItem } from '../types';
+
+interface NavigationProps {
+  cartItems: CartItem[];
+}
+
+export function Navigation({ cartItems }: NavigationProps) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  return (
+    <nav className="border-2 border-red-500 bg-purple-500 shadow-lg fixed w-full z-50">
+   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16">
+          <div className="flex items-center">
+            <span className="text-2xl font-bold text-white">Holi</span>
+            
+          </div>
+          
+          <div className="flex items-center space-x-4">
+           
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden text-gray-700"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+          <div className="hidden  items-center md:flex space-x-8 ml-10">
+              <a href="" className="text-white hover:scale-105 hover:text-purple-600 ">Home</a>
+              <a href="" className="text-white hover:text-purple-600">About Us</a>
+              <a href="" className="text-white hover:text-purple-600">Products</a>
+              <a href="" className="text-white hover:text-purple-600">Blog</a>
+              <a href="" className="text-white hover:text-purple-600">Testimonials</a>
+              <a href="" className="text-white hover:text-purple-600">Contact</a>
+            </div>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      {isMenuOpen && (
+        <div className="md:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+            <a
+              href="#home"
+              className="block px-3 py-2 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-md"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </a>
+            <a
+              href="#about"
+              className="block px-3 py-2 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-md"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About Us
+            </a>
+            <a
+              href="#products"
+              className="block px-3 py-2 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-md"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Products
+            </a>
+            <a
+              href="#blog"
+              className="block px-3 py-2 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-md"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Blog
+            </a>
+            <a
+              href="#testimonials"
+              className="block px-3 py-2 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-md"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Testimonials
+            </a>
+            <a
+              href="#contact"
+              className="block px-3 py-2 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-md"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+}
+
+export default Navigation;
