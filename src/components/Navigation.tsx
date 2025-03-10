@@ -28,17 +28,14 @@ export function Navigation({ cartItems }: NavigationProps) {
             </button>
           </div>
           <div className="hidden  items-center md:flex space-x-8 ml-10">
-              <a href="" className="text-white hover:scale-105 hover:text-purple-600 ">Home</a>
-              <a href="" className="text-white hover:text-purple-600">About Us</a>
-              <a href="" className="text-white hover:text-purple-600">Products</a>
-              <a href="" className="text-white hover:text-purple-600">Blog</a>
-              <a href="" className="text-white hover:text-purple-600">Testimonials</a>
-              <a href="" className="text-white hover:text-purple-600">Contact</a>
+              <a href="#home" className="text-white hover:scale-105 hover:text-purple-600 ">Home</a>
+              <a href="#products" className="text-white hover:text-purple-600">Products</a>
+              <a href="#testimonal" className="text-white hover:text-purple-600">Testimonials</a>
+              <a href="#contact" className="text-white hover:text-purple-600">Contact</a>
             </div>
         </div>
       </div>
 
-      {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
@@ -50,25 +47,11 @@ export function Navigation({ cartItems }: NavigationProps) {
               Home
             </a>
             <a
-              href="#about"
-              className="block px-3 py-2 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-md"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About Us
-            </a>
-            <a
               href="#products"
               className="block px-3 py-2 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
               Products
-            </a>
-            <a
-              href="#blog"
-              className="block px-3 py-2 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-md"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Blog
             </a>
             <a
               href="#testimonials"
