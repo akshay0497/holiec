@@ -15,21 +15,21 @@ function App() {
       name: "Organic Gulal Pack",
       description: "",
       price: 100,
-      image: "https://t4.ftcdn.net/jpg/04/17/51/63/360_F_417516327_VUdUDXbn3VP6zxdgn6TTQbnKWAEZ1qhN.jpg"
+      image: "./src/assets/gulal.jpg"
     },
     {
       id: 2,
       name: "Premium Pichkari Set",
       description: "",
       price: 100,
-      image: "https://cdn3d.iconscout.com/3d/premium/thumb/holi-pichkari-3d-icon-download-in-png-blend-fbx-gltf-file-formats--day-color-injection-play-pack-festival-days-icons-6215988.png?f=webp"
-    },
+      image:"./src/assets/6215988.jpeg"   
+     },
     {
       id: 3,
       name: "Festive Kurta Set",
       description: "",
       price: 100,
-      image: "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/3/c/8/xl-happy-holi-xl-tee-mafia-original-imagn25zjh8rhyjt.jpeg?q=70"
+      image: "./src/assets/tshirtimage.jpeg"
     },
   ];
 
