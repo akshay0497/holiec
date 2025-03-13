@@ -31,6 +31,7 @@ function App() {
       price: 100,
       image: "./assets/tshirtimage.jpeg"
     },
+    
   ];
 
   const testimonials = [
@@ -45,7 +46,13 @@ function App() {
       name: "Aditya Kumar Dwivedi ",
       image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
       review: "loem ertyuiouytretyui drthuiouytrerrty oiuytrewrtyuiuytre oiuytrertyu"
-    }
+    },
+    {
+      id: 1,
+      name: "Aditya Kumar Dwivedi ",
+      image: "https://images.pexels.com/photos/2753381/pexels-photo-2753381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      review: "uytretyuiuytre ertyuiuytrew rwetyuiuytrertyu iuytrertyuy"
+    },
   ];
 
   const addToCart = (product: Product) => {
